@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Charity Organization</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -14,7 +13,6 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Donate</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
@@ -51,18 +49,25 @@
       <li><a href="#"><i class="fab fa-facebook"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fab fa-rumble"></i></a></li>
-      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
     </ul>
   </section>
 
-  <section class="donate">
-    <h2>Donate</h2>
-    <p>Make a donation through Western Union:</p>
-    <ol>
-      <li>Visit your local Western Union agent</li>
-      <li>Provide the agent with the following information:</li>
-      <ul>
-        <li><strong>Receiver:</strong> Charity Organization</li>
-        <li><strong>Country:</strong>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="submit-form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Charity Organization 2023. All rights reserved.</p>
+  </footer>
+</body>
+</html>
