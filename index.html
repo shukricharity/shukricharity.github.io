@@ -1,101 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Charity Organization</title>
-  <style>
-    /* CSS styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #f2f2f2;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #333;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 20px;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 20px;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.5;
-    }
-    img {
-      max-width: 100%;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 10px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      border: 2px solid #333;
-      border-radius: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1>Charity Organization</h1>
+    <div class="logo">Charity Organization</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
+
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Together we can make a difference</h1>
+      <p>Join us in our mission to help those in need</p>
+      <a href="#" class="btn">Donate Now</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non risus vitae nisl finibus interdum. In ut nibh eget libero cursus tincidunt. Nulla rhoncus erat vel mauris pulvinar, sit amet euismod justo pellentesque. Fusce vitae faucibus mauris, sed eleifend orci.</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-images">
+      <img src="gallery-1.jpg" alt="Gallery Image">
+      <img src="gallery-2.jpg" alt="Gallery Image">
+      <img src="gallery-3.jpg" alt="Gallery Image">
+      <img src="gallery-4.jpg" alt="Gallery Image">
+      <img src="gallery-5.jpg" alt="Gallery Image">
+      <img src="gallery-6.jpg" alt="Gallery Image">
+    </div>
+  </section>
+
+  <section class="social">
+    <h2>Follow Us</h2>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-rumble"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
     </ul>
-    <ul>
-      <li><a href="#">Donate Now</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h1>Welcome to Our Charity Organization</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada, purus eget blandit ultricies, augue ex gravida ex, eget varius nibh dolor et nulla. Ut eu mi blandit, hendrerit ante eget, bibendum nunc. Ut euismod libero at odio suscipit, ut lacinia arcu fermentum. Fusce tincidunt ex sed libero consectetur, vel tristique velit bibendum. Donec eu malesuada tellus, non vulputate purus.</p>
-    </section>
-    <section>
-      <h1>Our Gallery</h1>
-      <div class="gallery">
-        <img src="img1.jpg" alt="Image 1">
-        <img src="img2.jpg" alt="Image 2">
-        <img src="img3.jpg" alt="Image 3">
-        <img src="img4.jpg" alt="Image 4">
-        <img src="img5.jpg" alt="Image 5">
-        <img src="img6.jpg" alt="Image 6">
-      </div>
-    </section>
-  </main
+  </section>
+
+  <section class="donate">
+    <h2>Donate</h2>
+    <p>Make a donation through Western Union:</p>
+    <ol>
+      <li>Visit your local Western Union agent</li>
+      <li>Provide the agent with the following information:</li>
+      <ul>
+        <li><strong>Receiver:</strong> Charity Organization</li>
+        <li><strong>Country:</strong>
